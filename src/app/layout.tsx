@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import Script from "next/script"; // ✅ Added
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -81,9 +82,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'your-google-verification-code',
-  },
   alternates: {
     canonical: 'https://bildtools.online',
   },
@@ -99,6 +97,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground min-h-screen flex flex-col`}
       >
+
+        {/* ✅ Google AdSense Script */}
+        <Script
+          async
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6737091335491829"
+          crossOrigin="anonymous"
+        />
+
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
