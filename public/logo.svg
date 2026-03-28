@@ -1,0 +1,38 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6"/>
+      <stop offset="100%" style="stop-color:#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#EC4899"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#gradient1)"/>
+  
+  <!-- Image Frame Icon -->
+  <rect x="140" y="160" width="232" height="192" rx="20" fill="white" opacity="0.95"/>
+  
+  <!-- Mountain/Image Symbol -->
+  <path d="M160 300 L220 240 L260 280 L300 220 L350 300 L350 320 C350 331.046 341.046 340 330 340 L180 340 C168.954 340 160 331.046 160 320 Z" fill="url(#gradient2)"/>
+  
+  <!-- Sun Circle -->
+  <circle cx="200" cy="210" r="25" fill="#FBBF24"/>
+  
+  <!-- Tools/Gear Icon Overlay -->
+  <circle cx="350" cy="170" r="50" fill="white" stroke="url(#gradient1)" stroke-width="6"/>
+  <circle cx="350" cy="170" r="20" fill="url(#gradient1)"/>
+  
+  <!-- Gear Teeth -->
+  <rect x="344" y="115" width="12" height="25" rx="4" fill="url(#gradient1)"/>
+  <rect x="344" y="200" width="12" height="25" rx="4" fill="url(#gradient1)"/>
+  <rect x="295" y="164" width="25" height="12" rx="4" fill="url(#gradient1)"/>
+  <rect x="380" y="164" width="25" height="12" rx="4" fill="url(#gradient1)"/>
+  <rect x="308" y="130" width="12" height="25" rx="4" fill="url(#gradient1)" transform="rotate(45 314 142.5)"/>
+  <rect x="380" y="185" width="12" height="25" rx="4" fill="url(#gradient1)" transform="rotate(45 386 197.5)"/>
+  <rect x="308" y="185" width="12" height="25" rx="4" fill="url(#gradient1)" transform="rotate(-45 314 197.5)"/>
+  <rect x="380" y="130" width="12" height="25" rx="4" fill="url(#gradient1)" transform="rotate(-45 386 142.5)"/>
+</svg>
